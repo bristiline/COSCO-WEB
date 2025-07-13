@@ -5,7 +5,7 @@
     </td>
     <td align="right">
       <h1> COSCO TECHNOLOGY <span style="font-size: 0.7em; font-weight: normal;">(prev AppCut)</span></h1>
-      <h3 style="margin-top: -10px;">A free, open-source video editor for web, desktop, and mobile.</h3>
+      <h3 style="margin-top: -10px;">A free, open-source technology company web, desktop, and mobile.</h3>
     </td>
   </tr>
 </table>
