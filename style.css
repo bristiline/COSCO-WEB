@@ -20,7 +20,7 @@ body {
   justify-content: center;
   height: 80px;
   width: 100%;
-  position: sticky;
+  position: relative;
   top: 0;
   background: transparent;
   z-index: 999;
@@ -200,11 +200,11 @@ body {
 
 .wrapper {
   position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 410px;
-  height: 450px;
+  width: 440px;
+  height: 460px;
   backdrop-filter: blur(10px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -230,6 +230,7 @@ body {
   width: 100%;
   height: 50px;
   border-bottom: 2px solid ;
+  margin: 30px 0;
 }
 .input-box  label {
   position: absolute;
@@ -240,11 +241,14 @@ body {
   color: #000000;
   font-weight: 500;
   pointer-events: none;
+  transition: .5s;
 }
 
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
-  top: -5px
+  top: -5px;
+  
+  
 }
 
 .input-box input {
@@ -254,7 +258,9 @@ body {
   border: none;
   outline: none;
   font-size: 1em;
-  padding: 0 40px 0 5px;
+  color: #000000;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
 }
 
 .input-box .icon {
@@ -263,5 +269,139 @@ body {
   color: #000000;
   font-size: 1.2em;
   line-height: 57px;
+  transition: 0.5s;
 }
+
+.remember-forgot {
+  font-size: .9em;
+  color: #000;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  accent-color: #000;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #000;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn{
+  width: 100%;
+  height: 45px;
+  background: #000;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-register {
+  font-size: .9em;
+  color: #000;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+.slogan {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-kerning: normal;
+  font-size: 30px;
+  text-decoration: none;
+  line-height: 63px;
+  list-style: none;
+  letter-spacing: 0.287em;
+  text-align: center;
+  text-wrap: pretty;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.slogan2 {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-kerning: normal;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 63px;
+  list-style: none;
+  letter-spacing: 0.287em;
+  text-align: center;
+  text-wrap: balance;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+}
+
+.company_bio {
+  color: #5a5248;
+  font-style: normal;
+  font-weight: 900;
+  font-kerning: normal;
+  font-size: 30.4px;
+  text-decoration: none;
+  line-height: 63px;
+  list-style: none;
+  letter-spacing: 0.287em;
+  text-align: center;
+  text-wrap: stable;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 460px;
+  background-color: #ccd2ad;
+}
+
+.company_biographic {
+  color: #5a5248;
+  font-style: normal;
+  font-weight: lighter;
+  font-kerning: normal;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 31px;
+  list-style: none;
+  letter-spacing: 0.276em;
+  text-align: center;
+  text-wrap: balance;;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 1x;
+  background-color: #ccd2ad;
+}
+
+.box {
+  background-color: #ccd2ad;
+}
+ 
+.g-signin2 {
+line-height: 31px;
+}
+
 
